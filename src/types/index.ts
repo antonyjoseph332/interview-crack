@@ -11,7 +11,7 @@ export interface InterviewQuestion {
   children?: InterviewQuestion[];
 }
 
-export type TopicId = 'angular' | 'javascript' | 'html' | 'css' | 'scss' | 'react';
+export type TopicId = 'angular' | 'javascript' | 'html' | 'css' | 'scss' | 'react' | 'practical';
 
 export interface Topic {
   id: TopicId;

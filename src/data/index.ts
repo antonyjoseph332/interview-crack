@@ -3,6 +3,7 @@ import { angularQuestions } from './angular';
 import { cssQuestions } from './css';
 import { htmlQuestions } from './html';
 import { javascriptQuestions } from './javascript';
+import { practicalQuestions } from './practical';
 import { reactQuestions } from './react';
 import { scssQuestions } from './scss';
 
@@ -13,6 +14,7 @@ export const topics: Topic[] = [
   { id: 'css', label: 'CSS', path: '/css' },
   { id: 'scss', label: 'SCSS', path: '/scss' },
   { id: 'react', label: 'React', path: '/react' },
+  { id: 'practical', label: 'Practical', path: '/practical' },
 ];
 
 const questionsByTopic: Record<TopicId, InterviewQuestion[]> = {
@@ -22,6 +24,7 @@ const questionsByTopic: Record<TopicId, InterviewQuestion[]> = {
   css: cssQuestions,
   scss: scssQuestions,
   react: reactQuestions,
+  practical: practicalQuestions,
 };
 
 export function getQuestionsByTopic(topicId: TopicId): InterviewQuestion[] {
